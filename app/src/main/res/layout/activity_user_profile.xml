@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.purdue.entreemobile.entreeproject.UserProfileActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="#ff3c3f41">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/photo"
+                    android:background="@drawable/ellen_01" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Ellen Lai"
+                        android:id="@+id/textView"
+                        android:textSize="25dp"
+                        android:paddingLeft="15dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="#ffffffff" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingLeft="15dp"
+                        android:gravity="top">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/crownImage"
+                            android:background="@drawable/crown_new" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Entrée Master"
+                            android:id="@+id/textView3"
+                            android:gravity="center"
+                            android:textSize="14dp"
+                            android:paddingLeft="5dp"
+                            android:textColor="#ffffffff" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:text="Edit Profile"
+                    android:id="@+id/edit_profile"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/bt_transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Review (75)"
+                        android:id="@+id/bt_review"
+                        android:textSize="13dp"
+                        android:textColor="#000000"
+                        android:onClick="clickReviews"
+                        android:background="#ffe4e4e4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/border_bottom">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="FOLLOWERS (109)"
+                        android:id="@+id/bt_followed"
+                        android:textSize="13dp"
+                        android:background="#ffe4e4e4"
+                        android:onClick="clickFollowers" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/border_bottom">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="FOLLOWING (80)"
+                        android:id="@+id/bt_following"
+                        android:textSize="13dp"
+                        android:background="#ffe4e4e4"
+                        android:onClick="clickFollowing" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/border_bottom"
+                android:visibility="gone"
+                android:id="@+id/follower_layout" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Followers (109)"
+                    android:id="@+id/textView5"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView3"
+                        android:background="@drawable/friend01"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView10"
+                        android:background="@drawable/friend02"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView9"
+                        android:background="@drawable/friend03"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/border_bottom"
+                android:visibility="gone"
+                android:id="@+id/following_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Following (80)"
+                    android:id="@+id/textView4"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView2"
+                        android:background="@drawable/friend01"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView11"
+                        android:background="@drawable/friend03"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView12"
+                        android:background="@drawable/friend02"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/border_bottom"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Recent Reviews"
+                    android:id="@+id/textView2"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/review_layout"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

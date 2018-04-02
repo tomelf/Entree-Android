@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_bottom">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/menuinfo_layout">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/menu_image"
+            android:background="@drawable/five_guys" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu_name"
+                android:textSize="14dp"
+                android:textColor="#000000"
+                android:text="Cheese Burger" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/restraunt"
+                android:textSize="14dp"
+                android:textColor="#ff4c4c4c"
+                android:text="\@ Five Guys" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/money_layout"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/money_value"
+                        android:textSize="14dp"
+                        android:textColor="#000000"
+                        android:text="$ 6.89" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/yummy_layout">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/yummy_image_layout"
+                        android:paddingLeft="3dp"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/border_bottom" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/userinfo_layout">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/user_image"
+                android:background="@drawable/ellen_01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ellen Lai"
+                android:id="@+id/user_name"
+                android:textSize="14dp"
+                android:textColor="#ff3c3f41"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:id="@+id/userreview_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/review_description"
+                android:textSize="12dp"
+                android:textColor="#ff3c3f41"
+                android:text="15 of 15 people found the following review helpful" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView4"
+                    android:background="@drawable/liked"
+                    android:paddingRight="2dp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView6"
+                    android:background="@drawable/liked"
+                    android:paddingRight="2dp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView8"
+                    android:background="@drawable/liked"
+                    android:paddingRight="2dp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView7"
+                    android:background="@drawable/liked"
+                    android:paddingRight="2dp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView5"
+                    android:background="@drawable/liked"
+                    android:paddingRight="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/review_title"
+                    android:textSize="14dp"
+                    android:textColor="#ff3c3f41"
+                    android:text="So delicious!!"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/review_time"
+                android:textSize="12dp"
+                android:textColor="#ff3c3f41"
+                android:text="on Mar 7, 2015"
+                android:paddingLeft="3dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/linearLayout"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/review_text"
+                        android:textSize="12dp"
+                        android:textColor="#ff3c3f41"
+                        android:text="I had a cheeseburger and French fries and was very happy. It is no doubt the best burger in West Lafayette. Recommend to everyone who has not tasted before. I added green lettuce, tomato, pepper, grill onions, grill mushrooms, ketchup, mustard, and BBQ sauce. The beef is tender and juicy which dominate all the fast food burger. My family usually spends our weekend here and they all have good experience having this. To anyone loves cheeseburger, you must visit here at least once. You will not be disappointed!!!" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/linearLayout3" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/linearLayout2"
+                        android:paddingLeft="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

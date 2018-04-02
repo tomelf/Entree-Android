@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Entrée</string>
+
+    <string name="project_name">ENTRÉE</string>
+    <string name="title_activity_main">Entrée</string>
+
+    <string name="action_settings">Profile</string>
+    <string name="category_chinesefoods">Chinese Food</string>
+    <string name="category_japanfoods">Japanese Food</string>
+    <string name="category_hamburger">Burger</string>
+    <string name="category_pasta">Pasta</string>
+    <string name="category_cafetea">Coffee</string>
+    <string name="title_activity_result_list">Result</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="search_hint">Search foods, cuisines</string>
+    <string name="yummy_title">Flavor</string>
+    <string name="title_activity_user_profile">My Profile</string>
+</resources>

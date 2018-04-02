@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bottom"
+    android:gravity="center_vertical|center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/image"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:text="Yangchow Fried Rice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/restraunt"
+                android:textSize="14sp"
+                android:textColor="#ff4c4c4c"
+                android:text="Rice Cafe" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/money_layout"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/money_value"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="14dp"
+                        android:id="@+id/money_change"
+                        android:background="@drawable/price_arrow_up"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/yummy_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yummy_title"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:text="@string/yummy_title" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/yummy_image_layout"
+                        android:paddingLeft="3dp">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:id="@+id/yummy_image_1"
+                            android:visibility="gone"
+                            android:background="@drawable/liked" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:id="@+id/yummy_image_2"
+                            android:visibility="gone"
+                            android:background="@drawable/liked" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:id="@+id/yummy_image_3"
+                            android:visibility="gone"
+                            android:background="@drawable/liked" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:id="@+id/yummy_image_4"
+                            android:visibility="gone"
+                            android:background="@drawable/liked" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:id="@+id/yummy_image_5"
+                            android:visibility="gone"
+                            android:background="@drawable/liked" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
