@@ -5,6 +5,7 @@ Entrée: a web service for users to share review per dish instead of review per 
 
 ## Team Members
 
+- [Kane Yang](https://github.com/tomelf)
 - [Sam Ling](https://github.com/thling)
 - [Ellen Lai](https://github.com/yiyulai)
 - [Bruce Weng](https://github.com/BruceWeng)
