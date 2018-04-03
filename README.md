@@ -9,6 +9,8 @@ Entrée: a web service for users to share review per dish instead of review per 
 - [Ellen Lai](https://github.com/yiyulai)
 - [Bruce Weng](https://github.com/BruceWeng)
 
+We proposed Entrée in the Hack the Anvil (Hackathon) 2015 and finished in the top 14 among 100+ teams. The prototype was presented to the hackathon sponsors, such as Apple, Cisco and Microsoft.
+
 
 ## Inspiration
 
@@ -33,7 +35,7 @@ We ran into a few problems both in the front-end and back-end. For the front-end
 
 We managed to develop an awesome app and API service under 36 hours. Each member of the team contributed greatly to the data and framework design, and helped enhancing the bridge between the Android app and our server.
 
-## What we learnt
+## What we've learned
 
 How difficult it is to structure a web app from scratch, and how difficult it is to design and develop a full-stack service with limited time and personnel. We understand how much it takes to develop a sustainable and highly-scalable system.
 
